@@ -1,4 +1,4 @@
-use actix_web::{get, web, middleware, App, HttpResponse, HttpServer, Responder};
+use actix_web::{web, middleware, App, HttpServer};
 
 #[derive(Debug, Clone)]
 struct AppState {
@@ -24,7 +24,8 @@ async fn main() -> std::io::Result<()> {
             )
             .service(
                 web::scope("/messages")
-            )})
+            )
+        })
     .bind(("127.0.0.1", 8080))?
     .run()
     .await
