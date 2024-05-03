@@ -1,0 +1,1 @@
+fn(Data<AppState>, actix_web::web::Path<i32>, actix_web::web::Json<recruitment_process::Model>) -> impl std::future::Future<Output = Result<actix_web::web::Json<recruitment_process::Model>, actix_web::Error>> {process_update}
