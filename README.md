@@ -8,6 +8,8 @@ Database
 Create a new schema on your database server and run the script in `database-schema.sql`
 
 Backend
+
+Edit the `.env` file to have the appropriate username, password, and schema (if you change the schema name)
 To start the development server (runs on http://localhost:8000)
 `cargo run`
 
